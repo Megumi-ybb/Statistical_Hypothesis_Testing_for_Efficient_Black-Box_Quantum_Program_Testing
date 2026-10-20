@@ -1,0 +1,23 @@
+design,cell,normal,exact
+single-qubit exact binomial,"p0=0.5, |dp|=0.02",4903.1913000136465,4927.0
+single-qubit exact binomial,"p0=0.1, |dp|=0.04",484.02293396427586,478.0
+Bonferroni marginal,"d=2, p0=0.5, |dp|=0.02",5939.0,
+Bonferroni marginal,"d=3, p0=0.5, |dp|=0.02",6541.0,
+Bonferroni marginal,"d=4, p0=0.5, |dp|=0.02",6967.0,
+Bonferroni marginal,"d=5, p0=0.5, |dp|=0.02",7297.0,
+Bonferroni marginal,"d=6, p0=0.5, |dp|=0.02",7566.0,
+Bonferroni marginal,"d=7, p0=0.5, |dp|=0.02",7793.0,
+Bonferroni marginal,"d=8, p0=0.5, |dp|=0.02",7990.0,
+Bonferroni marginal,"d=9, p0=0.5, |dp|=0.02",8163.0,
+Bonferroni marginal,"d=10, p0=0.5, |dp|=0.02",8318.0,
+Bonferroni marginal,"d=11, p0=0.5, |dp|=0.02",8458.0,
+Bonferroni marginal,"d=12, p0=0.5, |dp|=0.02",8585.0,
+joint chi-square,"d=2, w=0.4",,69.0
+joint chi-square,"d=3, w=0.4",,90.0
+joint chi-square,"d=4, w=0.4",,118.0
+joint chi-square,"d=5, w=0.4",,156.0
+joint chi-square,"d=6, w=0.4",,208.0
+joint chi-square,"d=7, w=0.4",,282.0
+joint chi-square,"d=8, w=0.4",,385.0
+joint chi-square,"d=9, w=0.4",,531.0
+joint chi-square,"d=10, w=0.4",,738.0

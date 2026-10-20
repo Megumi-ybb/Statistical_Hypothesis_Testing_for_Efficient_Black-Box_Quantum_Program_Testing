@@ -1,0 +1,28 @@
+\begin{table}[ht]
+\centering
+\caption{\rev{Type~I error of the proposed tests and the classical baselines on the six named benchmarks under the null (campaign I4E1B, $1{,}000$ replications per cell, $\alpha = 0.05$). ``Vacuous'' is the fraction of cells in which pooling leaves a single cell and the lumped tests return no decision. The statistics in the last three columns exclude those cells. Brackets are interquartile ranges across cells. The bootstrap and sequential procedures run on QFT only.}}
+\label{tab:baseline_typei}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}l r c c c c@{}}
+\toprule
+Test & Cells & Vacuous & Median & IQR & Max \\
+\midrule
+\multicolumn{6}{l}{\emph{Joint paradigm}} \\
+Chi-square, lumped & 480 & 0.53 & 0.041 & [0.029, 0.050] & 0.066 \\
+G-test, lumped & 480 & 0.53 & 0.043 & [0.029, 0.054] & 0.111 \\
+MC multinomial & 480 & -- & 0.040 & [0.000, 0.050] & 0.078 \\
+Energy distance & 480 & -- & 0.041 & [0.000, 0.049] & 0.071 \\
+MMDAgg & 480 & -- & 0.018 & [0.000, 0.024] & 0.076 \\
+TV bound & 480 & -- & 0.000 & [0.000, 0.000] & 0.006 \\
+Tolerance & 480 & -- & 1.000 & [1.000, 1.000] & 1.000 \\
+\multicolumn{6}{l}{\emph{Marginal paradigm}} \\
+Adaptive & 580 & -- & 0.018 & [0.000, 0.031] & 0.068 \\
+Exact binomial & 580 & -- & 0.018 & [0.000, 0.029] & 0.064 \\
+Per-qubit G-test & 580 & -- & 0.020 & [0.000, 0.034] & 0.070 \\
+Bootstrap (QFT) & 110 & -- & 0.048 & [0.043, 0.053] & 0.067 \\
+Sequential, adaptive (QFT) & 110 & -- & 0.024 & [0.020, 0.032] & 0.043 \\
+Sequential, exact (QFT) & 110 & -- & 0.019 & [0.015, 0.024] & 0.038 \\
+\bottomrule
+\end{tabular}
+\end{table}

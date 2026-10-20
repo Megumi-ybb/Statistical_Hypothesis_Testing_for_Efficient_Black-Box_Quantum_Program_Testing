@@ -1,0 +1,7 @@
+.venv/
+revision/harness/.venv*/
+revision/grid_worker.sh
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store

@@ -1,0 +1,26 @@
+Data license: Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Tiancheng Jin, Bo Yang, Haibo Yu, and Jianjun Zhao
+
+This repository is licensed in two parts.
+
+Code, under the MIT License in LICENSE: every .py and .sh file, the harness
+tests, and the environment and requirements files.
+
+Data, under CC BY 4.0: the experimental results and everything derived from
+them, namely
+  - revision/results/ (per-cell Parquet files of the revised campaign),
+  - revision/analysis_out/ (summaries and generated tables),
+  - revision/figures/ (generated figures),
+  - the result CSV files and the combined summaries under Joint/ and Marginal/,
+  - the CSV and JSON files under revision/harness/.
+
+You may share and adapt the data for any purpose, provided that you give
+appropriate credit, provide a link to the license, and indicate if changes
+were made. Please cite the article listed in README.md. The full legal code
+is at https://creativecommons.org/licenses/by/4.0/legalcode
+
+Third-party material: the OPENQASM benchmark instances under
+Joint/Experiment/benchmark/ and Marginal/Experiment/benchmark/ are not covered
+by either license. They are redistributed for reproducibility under the terms
+of their original source.

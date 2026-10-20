@@ -1,0 +1,21 @@
+\begin{table*}[ht]
+\centering
+\caption{\rev{Structural fault study, joint paradigm: median power by mutation operator across the six benchmarks and $d = 2$ to $10$. ``Cells'' is the number of applicable (circuit, $d$) pairs. ``Null-rate'' is the fraction of those pairs whose rejection rate at $m = 2{,}000$ does not exceed $0.08$, the operational sign of an equivalent mutant.}}
+\label{tab:struct_joint}
+\small
+\begin{tabular}{l r r ccc ccc ccc}
+\toprule
+& & & \multicolumn{3}{c}{Chi-square} & \multicolumn{3}{c}{MC multinomial} & \multicolumn{3}{c}{MMDAgg} \\
+\cmidrule(lr){4-6} \cmidrule(lr){7-9} \cmidrule(lr){10-12}
+Operator & Cells & Null-rate & $m{=}100$ & $300$ & $1000$ & $m{=}100$ & $300$ & $1000$ & $m{=}100$ & $300$ & $1000$ \\
+\midrule
+O2 gate deletion & 48 & 0.40 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\
+O4 control--target swap & 29 & 0.34 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\
+O7 routing defect & 41 & 0.27 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\
+O3 gate insertion & 48 & 0.27 & 0.06 & 0.24 & 0.70 & 0.17 & 0.39 & 0.81 & 0.03 & 0.03 & 0.07 \\
+O1 gate-angle perturbation (0.1 rad) & 27 & 0.67 & 0.00 & 0.00 & 0.05 & 0.04 & 0.05 & 0.05 & 0.02 & 0.03 & 0.02 \\
+O5 phase error & 48 & 0.69 & 0.04 & 0.03 & 0.04 & 0.05 & 0.05 & 0.05 & 0.03 & 0.02 & 0.02 \\
+O6 wrong oracle encoding & 48 & 0.56 & 0.04 & 0.05 & 0.05 & 0.06 & 0.05 & 0.06 & 0.03 & 0.03 & 0.03 \\
+\bottomrule
+\end{tabular}
+\end{table*}

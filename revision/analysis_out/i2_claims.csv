@@ -1,0 +1,8 @@
+claim,description,manuscript,recomputed,abs_error,tolerance,verdict
+adaptive_median,"adaptive (auto) Type I, median over the grid",0.06,0.06,0.0,0.0005,PASS
+adaptive_max,"adaptive (auto) Type I, max over the grid",0.087,0.087,0.0,0.0005,PASS
+bootstrap_median,"bootstrap Type I, median over the grid",0.055,0.055,0.0,0.0005,PASS
+sequential_median,"sequential Type I, median over the grid",0.048,0.048,0.0,0.0005,PASS
+partition_adaptive_entangling,"adaptive Type I, entangling circuits (mean)",0.0599,0.05991136363636364,1.1363636363635743e-05,0.0005,PASS
+partition_adaptive_non_entangling,"adaptive Type I, non-entangling (mean)",0.0607,0.060731818181818185,3.181818181818841e-05,0.0005,PASS
+partition_difference,mean |entangling - non-entangling| over 3 methods,0.002,0.0016553030303030347,0.0003446969696969653,0.002,PASS

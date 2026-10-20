@@ -1,0 +1,23 @@
+part,circuit,d,qasm,n_states,max_abs_dp,status,detail,experiment,script,state_source,produce_state_reads_seed,builder_support,campaign_support,tvd_builder_vs_campaign
+a1_oracle,BV,4,Joint/Experiment/benchmark/combinational/bv/bv_04.qasm,16,1.3322676295501878e-15,PASS,"qasm qubits=4, spec qubits=4",,,,,,,
+a1_oracle,BV,6,Joint/Experiment/benchmark/combinational/bv/bv_06.qasm,64,1.9984014443252818e-15,PASS,"qasm qubits=6, spec qubits=6",,,,,,,
+a1_oracle,BV,9,Joint/Experiment/benchmark/combinational/bv/bv_09.qasm,512,2.886579864025407e-15,PASS,"qasm qubits=9, spec qubits=9",,,,,,,
+a1_oracle,Grover,3,Joint/Experiment/benchmark/combinational/grover/grover_03.qasm,8,4.440892098500626e-16,PASS,"qasm qubits=3, spec qubits=3",,,,,,,
+a1_oracle,Grover,5,Joint/Experiment/benchmark/combinational/grover/grover_05.qasm,32,2.636779683484747e-16,PASS,"qasm qubits=5, spec qubits=5",,,,,,,
+a1_oracle,Grover,7,Joint/Experiment/benchmark/combinational/grover/grover_07.qasm,128,1.5265566588595902e-16,PASS,"qasm qubits=7, spec qubits=7",,,,,,,
+a1_oracle,QFT,4,Joint/Experiment/benchmark/combinational/qft/qft_04.qasm,16,4.163336342344337e-17,PASS,"qasm qubits=4, spec qubits=4",,,,,,,
+a1_oracle,QFT,6,Joint/Experiment/benchmark/combinational/qft/qft_06.qasm,64,1.3877787807814457e-17,PASS,"qasm qubits=6, spec qubits=6",,,,,,,
+a1_oracle,QFT,9,Joint/Experiment/benchmark/combinational/qft/qft_09.qasm,512,3.2526065174565133e-18,PASS,"qasm qubits=9, spec qubits=9",,,,,,,
+a1_oracle,QPE,4,Joint/Experiment/benchmark/combinational/pe/pe_04.qasm,16,1.3322676295501878e-15,PASS,"qasm qubits=5, spec qubits=5",,,,,,,
+a1_oracle,QPE,6,Joint/Experiment/benchmark/combinational/pe/pe_06.qasm,64,1.9984014443252818e-15,PASS,"qasm qubits=7, spec qubits=7",,,,,,,
+a1_oracle,QPE,9,Joint/Experiment/benchmark/combinational/pe/pe_09.qasm,512,2.886579864025407e-15,PASS,"qasm qubits=10, spec qubits=10",,,,,,,
+a1_oracle,QWALK,,,,nan,NO_REFERENCE,"benchmark/combinational/ ships adder, bv, grover, pe, qft, rand_cliff only -- there is no QWALK instance anywhere in the repo",,,,,,,
+a1_oracle,Adder,4,Joint/Experiment/benchmark/combinational/adder/adder_04.qasm,16,0.0,PASS,"qasm qubits=4, spec qubits=4",,,,,,,
+a1_oracle,Adder,7,Joint/Experiment/benchmark/combinational/adder/adder_07.qasm,128,0.0,PASS,"qasm qubits=7, spec qubits=7",,,,,,,
+a1_oracle,Adder,13,Joint/Experiment/benchmark/combinational/adder/adder_13.qasm,8192,0.0,PASS,"qasm qubits=13, spec qubits=13",,,,,,,
+a2_provenance,BV,6,,,,,,BV,joint_experiemnt_BVtestfalse.py,produce_state,False,1,64,0.9844799867065254
+a2_provenance,Grover,6,,,,,,GROVER,joint_experiemnt_grovertestfalse.py,produce_state,False,8,64,0.933981779355479
+a2_provenance,QFT,6,,,,,,QFT,joint_QFTtestfalse.py,produce_state,False,64,64,0.5457518858573502
+a2_provenance,QPE,6,,,,,,QPE,joint_QPEtestfalse.py,produce_state,False,1,64,0.9883495477006944
+a2_provenance,QWALK,6,,,,,,QWALK,joint_QWALKtestfalse.py,produce_state,False,8,64,0.8288172221740209
+a2_provenance,Adder,6,,,,,,add,joint_addtestfalse.py,produce_state,False,1,64,0.9883495477006944

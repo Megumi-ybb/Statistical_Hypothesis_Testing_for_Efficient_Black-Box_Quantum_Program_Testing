@@ -1,0 +1,21 @@
+\begin{table*}[ht]
+\centering
+\caption{\rev{Structural fault study, marginal paradigm: median power by mutation operator across the six benchmarks and $d = 2$ to $12$. The bootstrap and sequential methods apply only to QFT, whose marginals are all non-degenerate, and are reported in the text.}}
+\label{tab:struct_marginal}
+\small
+\begin{tabular}{l r ccc ccc ccc}
+\toprule
+& & \multicolumn{3}{c}{Adaptive} & \multicolumn{3}{c}{Exact binomial} & \multicolumn{3}{c}{Per-qubit G-test} \\
+\cmidrule(lr){3-5} \cmidrule(lr){6-8} \cmidrule(lr){9-11}
+Operator & Cells & $m{=}100$ & $300$ & $1000$ & $m{=}100$ & $300$ & $1000$ & $m{=}100$ & $300$ & $1000$ \\
+\midrule
+O2 gate deletion & 58 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\
+O4 control--target swap & 35 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\
+O7 routing defect & 51 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\
+O3 gate insertion & 58 & 0.07 & 0.17 & 0.58 & 0.06 & 0.17 & 0.58 & 0.08 & 0.18 & 0.60 \\
+O1 gate-angle perturbation (0.1 rad) & 33 & 0.04 & 0.05 & 0.05 & 0.03 & 0.04 & 0.04 & 0.04 & 0.05 & 0.05 \\
+O5 phase error & 58 & 0.03 & 0.03 & 0.03 & 0.03 & 0.03 & 0.03 & 0.03 & 0.03 & 0.03 \\
+O6 wrong oracle encoding & 58 & 0.05 & 0.06 & 0.05 & 0.04 & 0.04 & 0.05 & 0.06 & 0.06 & 0.05 \\
+\bottomrule
+\end{tabular}
+\end{table*}

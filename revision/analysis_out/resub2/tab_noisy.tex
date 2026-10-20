@@ -1,0 +1,21 @@
+\begin{table*}[ht]
+\centering
+\caption{\rev{Noisy simulator validation on the five-qubit textbook Grover circuit, $1{,}000$ replications per cell (campaign I5). Regime A tests noisy shots from the correct circuit against the ideal null and every rejection is a false alarm. Regime B tests them against a reference sample of size $r = 1{,}000$ from the characterized noisy backend; the entry is the mean over $m \in \{50, \ldots, 300\}$ with the range in brackets. The power columns give the minimum over $m$ against the wrong-oracle mutant under the same noise. Noise scale multiplies depolarizing rates of $0.001$ (one-qubit) and $0.01$ (two-qubit) and a readout error of $0.02$.}}
+\label{tab:noisy}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{l cc cc cc cc}
+\toprule
+& \multicolumn{4}{c}{Regime A, ideal null (false alarm rate)} & \multicolumn{2}{c}{Regime B, noise-aware null (Type~I)} & \multicolumn{2}{c}{Regime B power, min over $m$} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9}
+Noise scale & $\chi^2$, $m{=}50$ & $\chi^2$, $300$ & MMDAgg, $50$ & MMDAgg, $300$ & Homogeneity $\chi^2$ & MMDAgg & $\chi^2$ & MMDAgg \\
+\midrule
+0.25 & 0.714 & 1.000 & 0.060 & 0.236 & 0.048 [0.033, 0.058] & 0.022 [0.017, 0.028] & 1.000 & 1.000 \\
+0.5 & 0.932 & 1.000 & 0.216 & 0.832 & 0.051 [0.043, 0.071] & 0.029 [0.021, 0.041] & 1.000 & 1.000 \\
+1 (base) & 0.990 & 1.000 & 0.648 & 0.999 & 0.048 [0.038, 0.057] & 0.022 [0.019, 0.025] & 1.000 & 1.000 \\
+2 & 1.000 & 1.000 & 0.987 & 1.000 & 0.051 [0.041, 0.065] & 0.022 [0.019, 0.027] & 1.000 & 1.000 \\
+4 & 1.000 & 1.000 & 1.000 & 1.000 & 0.053 [0.046, 0.062] & 0.026 [0.021, 0.033] & 0.918 & 0.972 \\
+FakeManilaV2 & 1.000 & 1.000 & 1.000 & 1.000 & 0.050 [0.043, 0.056] & 0.024 [0.018, 0.030] & 1.000 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table*}
